@@ -1,0 +1,74 @@
+# Bluetooth-Controlled Home Automation with Arduino
+
+This project enables control of various household devices using an Arduino board and an HC-05 Bluetooth module. You can control a light, a table lamp, a fan, and a door lock mechanism via Bluetooth commands sent from a mobile device.
+
+## Features
+- Turn the light on/off.
+- Control the table lamp: on/off.
+- Activate/deactivate the fan.
+- Open/close the door lock.
+
+## Components Required
+- Arduino board (e.g., Arduino Uno)
+- HC-05 Bluetooth module
+- Servo motor
+- Relay module (for controlling the fan)
+- LEDs and resistors (for simulating light and table lamp)
+
+## Circuit Diagram
+```
++-------------------+      +-------------------------+       +-------------------------+
+|                   |      |                         |       |                         |
+|      Light        |      |        Table Lamp       |       |           Fan           |
+|                   |      |                         |       |                         |
++---------+---------+      +------------+------------+       +------------+------------+
+          |                             |                                  |
+          |                             |                                  |
+          |                             |                                  |
+          |                             |                                  |
+          +--------------+--------------+-----------------+----------------+
+                         |                                  |
+                         |                                  |
+                         |                                  |
+                         |                                  |
+                         |                                  |
+                         |                                  |
+                         |                                  |
+                         |                                  |
+                         |                                  |
+                         |                                  |
+                   +-----------+                    +-----------+
+                   |           |                    |           |
+                   |  Arduino  |                    |  Servo    |
+                   |           |                    |  Motor    |
+                   +-----+-----+                    +-----------+
+                         |
+                         |
+                         |
+                         |
+                  +------+--------+
+                  |               |
+                  |  Bluetooth    |
+                  |  Module       |
+                  +---------------+
+```
+
+## Instructions
+1. Connect the components according to the circuit diagram.
+2. Upload the provided Arduino sketch to your Arduino board.
+3. Power up the Arduino board.
+4. Pair the HC-05 Bluetooth module with your mobile device.
+5. Install a Bluetooth terminal app on your mobile device.
+6. Send commands (e.g., "light on", "fan off") via the Bluetooth terminal app to control the devices.
+
+## How it Works
+- The Arduino board receives commands via the HC-05 Bluetooth module.
+- Each command corresponds to a specific action: turning devices on/off or controlling the door lock.
+- The Arduino board communicates with the devices (light, lamp, fan, servo motor) to execute the requested actions.
+
+## Additional Notes
+- Ensure proper power supply to the Arduino board and components.
+- Use appropriate voltage levels and resistors to prevent damage to the components.
+- Test the circuit and code in a controlled environment before deployment.
+
+---
