@@ -70,5 +70,3 @@ This project enables control of various household devices using an Arduino board
 - Ensure proper power supply to the Arduino board and components.
 - Use appropriate voltage levels and resistors to prevent damage to the components.
 - Test the circuit and code in a controlled environment before deployment.
-
----
