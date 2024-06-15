@@ -1,0 +1,41 @@
+# Serial Monitor Commands and Their Meanings
+
+## Program: testing_moisture_and_water_level_sensor
+
+This program is used for testing the sensor values and calibrating the thresholds manually. It does not include any commands as it continuously prints sensor values to the Serial Monitor.
+
+## Program: testing_moisture_and_water_level_sensor_v2
+
+This program includes commands to control two motors using relays. Below are the commands you can type into the Serial Monitor and their respective functions:
+
+- **"m on"**:
+  - **Function**: Turns both the borewell motor and the tank motor on.
+  - **Example**: `m on`
+
+- **"m1 on"**:
+  - **Function**: Turns the borewell motor on.
+  - **Example**: `m1 on`
+
+- **"m1 off"**:
+  - **Function**: Turns the borewell motor off.
+  - **Example**: `m1 off`
+
+- **"m2 on"**:
+  - **Function**: Turns the tank motor on.
+  - **Example**: `m2 on`
+
+- **"m2 off"**:
+  - **Function**: Turns the tank motor off.
+  - **Example**: `m2 off`
+
+- **"help"**:
+  - **Function**: Prints a list of available commands.
+  - **Example**: `help`
+
+### Command Usage
+
+1. **Open the Serial Monitor** in the Arduino IDE.
+2. **Set the Baud Rate** to `9600`.
+3. **Enter Commands** as described above to control the motors.
+
+Ensure that the relay type (`relayType`) is correctly set in the code before uploading it to your Arduino. Refer to the code comments for further details on configuring the relay type.
